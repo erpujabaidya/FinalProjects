@@ -1,4 +1,5 @@
+
 FROM openjdk:8
 EXPOSE 8080
-ADD target/FinalProjects.war FinalProjects.war
-ENTRYPOINT ["java","-war","/FinalProjects.war"]
+ADD target/FinalProjects-0.0.1-SNAPSHOT.war FinalProjects-0.0.1-SNAPSHOT.war
+ENTRYPOINT ["java","-jar","/FinalProjects-0.0.1-SNAPSHOT.war"]
